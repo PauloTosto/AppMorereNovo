@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {font-family:Arial}
+        ul #nav{
+            list-style-type:none;
+            margin:10px 0 10px;
+            padding:0;
+        }
+        ul #nav li{
+            float:left;
+            width:30px;
+        }
+        ul #nav li a{
+          text-decoration:none;
+          background:#05609A;
+          color:#fff;
+          padding:5px;
+        }
+        ul #nav li a.active {
+            background:#B4F114;
+        }
+        .slide-image {
+            width:500px;
+            height:350px;
+            border:2px;
+            overflow:hidden;
+        }
+         /*.slide-image img 
+         {
+             display:none
+         }*/
+           
+         /*.slide-image img 
+         {
+             display:block;
+         }*/
+         
+
+    </style>
+
+    <meta charset="utf-8" />
+    <script src="http://ajax.gogleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">  </script>
+    
+    <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+    
+    <title></title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>jQuery Images</h1>
+
+    </div>
+    <!--<div class="slide-image" ><img  style="width:400px;height:300px" src="wwwroot/images/TESIMG_01.gif"/></div>-->
+
+    <script>
+       
+    $(document).ready(function () {
+        //var slideArray = ["banner1.svg", "banner2.svg"];
+        //var imgDir = "wwwroot/images/banner";
+
+        var slideArray = ["TESIMG_01.gif", "TESIMG_02.GIF", "TESIMG_03.GIF"];//, "TESTEIMG_04.JPG", "TESTEIMG_05.JPG"];
+        var imgDir = "wwwroot/images/TESIMG_0";
+
+        $('.container').append('<div class="slide-image"></div>');
+        $('.slide-image').html('<img  style="width:400px;height:300px"  src="imagem/' + slideArray[0] + '"/>');
+        $('.slide-image').after('<ul id = "nav"> </ul>');
+        var slideLength = slideArray.length;
+        for (i = 0; i < slideLength;i++)
+        {
+            var slideText = i + 1;
+            $('#nav').append('<li><a href = "#" rel = "' + slideText + '">' + slideText + ' </a></li>');
+         
+        }
+        $('#nav li a').bind('click', function () {
+            var numSlide = $(this).attr('rel');
+            var pathnovo = imgDir + numSlide + '.gif';
+            $('.slide-image img').attr("src", pathnovo).attr("alt", pathnovo).width("400px").height("300");
+
+            //$('.slide-image img').fadeIn(6000);
+            $('.slide-image img').show();
+            $('#nav li a').removeClass('active');
+            $(this).addClass('active');
+        });
+        $('#nav li a').eq(0).click;
+    })
+    </script>
+
+</body>
+
+
+</html>

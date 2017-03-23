@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    Sitio Oiteiro de Moreré<br />
+    Moreré,Ilha de Boipeba,Cairu, Bahia <br />
+    <abbr title="Telefone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+<header><h1>THE MAKER BUS</h1></header>
+<h2>O que é que vc quer fazer?</h2>
+@*<div class="third"><img src="img/toys1.jpg" alt="Circuit boards" /></div>*@
+<div class="two-thirds">
+    <!-- There is no apply.php file with the download (the action of the form)
+         It is just an example of where the user may be taken
+         Go back to the page after submitting the form and you should still see your data in the form -->
+    <form id="application" action="">
+        <label for="username">Name</label><input type="text" id="username" name="username" /><br>
+        <label for="answer">Answer</label><textarea id="answer" name="answer"></textarea>
+        <input type="submit" value="Save" />
+    </form>
+
+    @*<form id="form1" runat="server">
+        <asp:TextBox id="input1" runat="server"></asp:TextBox>
+        <asp:Button id="submitButton" runat="server" Text="Submit" OnClick="SubmitForm" />
+    </form>*@
+
+
+
+</div>
+
+@section scripts{
+
+
+    <style>   #content {
+        clear: both;
+        margin-top: 10px;}
+        .third {
+        width: 320px;
+        float: left;}
+        .two-thirds {
+        width: 640px;
+        float: left;}
+
+        p {margin-top: 0;}
+        </style>
+
+
+    <script>var testing = true;</script>
+
+    <script src="~/js/modernizr-2.6.2.js"></script>
+    <script type="text/javascript" src="~/js/local-storage.js"></script>
+
+}
+
+

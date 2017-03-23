@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html ng-app="photoBrowser">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="myid" ng-controller="photoList" class="container hide"   >
+
+        <div class="row">
+            <p>Titulo:</p>
+            <input type="text" class="form-control" ng-model="search.title" />
+            <p>Comentario:</p>
+             <input type="text" class="form-control" ng-model="search.comentario" /> 
+             
+        </div>
+        <div class="row">
+            <div ng-repeat="image in images|filter:search" class="col-sm-6">
+                <h1>{{image.title}} </h1>
+                <img ng-src="{{image.url}}" width="300" />
+                <h6> <textarea  style="border:none; width:300px;" maxlength="300" wrap="soft"> {{image.comentario}} </textarea></h6>
+                <h6>{{image.resposta}} </h6>
+             
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+@section scripts{
+<script src="~/lib/angular/angular.js"></script>
+<script src="~/js/DemoAngular.js"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $("#myid").removeClass("hide");
+    })
+</script>
+
+
+}

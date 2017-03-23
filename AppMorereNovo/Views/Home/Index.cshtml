@@ -1,0 +1,136 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row" style="margin:0 auto;max-width:770px">
+
+    @*<div class="col-md-3">
+            <h2></h2>
+            <ul>
+                <li>Como Chegar a Ilha de Boipeba</li>
+                <li><a href="comochegar.cshtml">Por Terra</a> for managing client-side libraries</li>
+                <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+            </ul>
+        </div>*@
+
+
+    
+
+
+    <div class="col-md-3" id="meu" style="max-width:746.66px;width:auto;max-height:560px;height:auto; margin:0 auto">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="~/SitioOuteiro/img/Aéreas/IMG_02.JPG" alt="IMG_02" class="img-circle" />
+                    @*<div class="carousel-caption" role="none" >
+                            <p style="font-size:smaller; font-style:oblique; background-color:rgba(0, 0, 0, 0);color:white">
+                                Moreré <br />
+                                um recanto encantado<br /> na costa da Bahia<br />
+                                <a class="btn btn-default" href="" style="background-position:bottom;font-size:xx-small">
+                                    Mais
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+                    <img src="~/SitioOuteiro/img/Aéreas/IMG_03.jpg" alt="IMG_03" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p style="font-size:smaller; font-style:oblique; background-color:rgba(0, 0, 0, 0);color:white">
+                                Um encanto único <br />
+                                <a class="btn btn-default" href="" style="background-position:bottom;font-size:xx-small">
+                                    Mais
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+                    <img src="~/SitioOuteiro/img/Aéreas/IMG_06.jpg" alt="IMG_06" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p  style="font-size:smaller; font-style:oblique; background-color:rgba(0, 0, 0, 0);color:white">
+                                Cheio de estórias <br />
+                                <a class="btn btn-default" href=""  style="background-position:bottom;font-size:xx-small">
+                                    Mais
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+                <div class="item">
+                    <img src="~/SitioOuteiro/img/Aéreas/IMG_07.jpg" alt="IMG_07" class="img-responsive" />
+                    @*<div class="carousel-caption" role="option">
+                            <p  style="font-size:smaller; font-style:oblique; background-color:rgba(0, 0, 0, 0);color:white">
+                                Casa na praia de Bainema <br />para alugar<br />
+                                <a class="btn btn-default" href="" style="background-position:bottom;font-size:xx-small">
+                                    Mais
+                                </a>
+                            </p>
+                        </div>*@
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Prev</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Primeira Figura</h2>
+        <ul>
+            <li>Sample pages using ASP.NET Core MVC</li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=518004">Bower</a> for managing client-side libraries</li>
+            <li>Theming using <a href="http://go.microsoft.com/fwlink/?LinkID=398939">Bootstrap</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h2>Segunda Figura</h2>
+        <ul>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkID=398600">Add a Controller and View</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkID=699562">Add an appsetting in config and access it in app.</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699315">Manage User Secrets using Secret Manager.</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699316">Use logging to log a message.</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699317">Add packages using NuGet.</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699318">Add client packages using Bower.</a></li>
+            <li><a href="http://go.microsoft.com/fwlink/?LinkId=699319">Target development, staging or production environment.</a></li>
+        </ul>
+    </div>
+    <div class="col-md-3">
+        @*<h2>Overview</h2>
+            <ul>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkId=518008">Conceptual overview of what is ASP.NET Core</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkId=699320">Fundamentals of ASP.NET Core such as Startup and middleware.</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkId=398602">Working with Data</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkId=398603">Security</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=699321">Client side development</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=699322">Develop on different platforms</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=699323">Read more on the documentation site</a></li>
+            </ul>*@
+    </div>
+    <div class="col-md-3">
+        @*<h2>Run & Deploy</h2>
+            <ul>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=517851">Run your app</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
+                <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
+            </ul>*@
+    </div>
+</div>
+@section scripts{
+
+
+    <script>var testing = true;</script>
+}

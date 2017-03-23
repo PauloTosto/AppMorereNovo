@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="photoBrowser">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="photoList"    class="container">
+        
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <div ng-repeat="image in images" class="col-sm-6">
+                 <h1>{{image.title}} </h1>
+                <img  ng-src="{{image.url}}" width="300"  />
+            </div>
+        </div>
+    </div>
+    
+    <script src="../lib/angular/angular.js"></script>
+    <script src="../js/DemoAngular.js"></script>
+</body>
+</html>

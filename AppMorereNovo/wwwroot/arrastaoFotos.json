@@ -1,0 +1,42 @@
+﻿[
+  {
+    "url": "../SitioOuteiro/img/arrastao/foto001.JPG",
+    "title": "praia1",
+    "comentario": "Vê-se ao fundo o Sitio Outeiro",
+    "resposta": "vamos que vamos"
+
+  },
+  {
+    "url": "../SitioOuteiro/img/arrastao/foto002.JPG",
+    "title": "robalo",
+    "comentario": "O robalo é um dos melhores peixes do mar. Vive nos estuários dos rios, onde vai desovar",
+    "resposta": "vamos que não vamos"
+  },
+
+  {
+    "title": "canoa",
+    "url": "../SitioOuteiro/img/arrastao/foto003.JPG",
+    "comentario": "Canoa ",
+    "resposta": "claro"
+  },
+  {
+    "title": "canoa e praia",
+    "url": "../SitioOuteiro/img/arrastao/foto004.JPG",
+    "comentario": "Praia e rede ",
+    "resposta": "não sei"
+  },
+  {
+    "title": "rede",
+    "url": "../SitioOuteiro/img/arrastao/foto006.JPG",
+    "comentario": "Qualquer Coisa ",
+    "resposta": "claro que não"
+  },
+  {
+    "title": "aerea",
+    "url": "../SitioOuteiro/img/Aéreas/IMG_01.JPG",
+    "comentario": "Visto de cima tudo é belo ",
+    "resposta": "claro que sim"
+  }
+]
+
+
