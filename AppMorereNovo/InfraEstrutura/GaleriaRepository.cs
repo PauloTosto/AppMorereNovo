@@ -11,29 +11,113 @@ namespace AppMorereNovo.InfraEstrutura
 {
     public class GaleriaRepository : IGaleriaRepository
     {
-        public List<GaleriaFoto> List()
+        //public List<GaleriaFoto> List()
+        //{
+        //    List<GaleriaFoto> ro;
+
+
+
+
+        //    using (var stream = new FileStream("../AppMorereNovo/wwwroot/Galeria2.json", FileMode.Open)) 
+        //    using (StreamReader r = new StreamReader(stream))
+        //    {
+        //        string json = r.ReadToEnd();
+        //        ro = JsonConvert.DeserializeObject<List<GaleriaFoto>>(json);
+        //    }
+        //    return ro.OrderBy(a => a.Titulo).ToList();
+
+        //}
+
+
+        public List<IndexCatalogo> List()
         {
-            List<GaleriaFoto> ro;
-                
+            
+            SuperCatFotos re = SuperPesquisa();
 
 
+            CatFotos ra = Pesquisa();
+            List<IndexCatalogo> ro = ra.InfoFoto;
 
-            using (var stream = new FileStream("../AppMorereNovo/wwwroot/Galeria2.json", FileMode.Open)) 
+            //List<IndexCatalogo> ro = ra.InfoFoto;
+
+            //using (var stream = new FileStream("../AppMorereNovo/wwwroot/galeria3.json", FileMode.Open))
+            //using (StreamReader r = new StreamReader(stream))
+            //{
+            //    string json = r.ReadToEnd();
+            //    ro = JsonConvert.DeserializeObject<List<IndexCatalogo>>(json);
+            //}
+            //   return ro.ToList();
+
+            return ro.OrderBy(a => a.Titulo).ToList();
+        }
+
+
+        public CatFotos Pesquisa()
+        {
+            CatFotos ro;
+            using (var stream = new FileStream("../AppMorereNovo/wwwroot/galeria3.json", FileMode.Open))
             using (StreamReader r = new StreamReader(stream))
             {
                 string json = r.ReadToEnd();
-                ro = JsonConvert.DeserializeObject<List<GaleriaFoto>>(json);
+                ro = JsonConvert.DeserializeObject<CatFotos>(json);
             }
-            return ro.OrderBy(a => a.Titulo).ToList();
-
-        }
-
-        public List<GaleriaFoto> ListByTitulo(string titulo)
-        {
-            List<GaleriaFoto> ro = new List<GaleriaFoto>();
+            //   return ro.ToList();
             return ro;
-
         }
+
+
+        public SuperCatFotos SuperPesquisa()
+        {
+            SuperCatFotos ro;
+            using (var stream = new FileStream("../AppMorereNovo/wwwroot/galeria2.json", FileMode.Open))
+            using (StreamReader r = new StreamReader(stream))
+            {
+                string json = r.ReadToEnd();
+                ro = JsonConvert.DeserializeObject<SuperCatFotos>(json);
+            }
+            //   return ro.ToList();
+            return ro;
+        }
+
+
+
+
+
+        /*public List<IndexCatalogo> List()
+        {
+            List<IndexCatalogo> ro;
+            using (var stream = new FileStream("../AppMorereNovo/wwwroot/galeria3.json", FileMode.Open))
+            using (StreamReader r = new StreamReader(stream))
+            {
+                string json = r.ReadToEnd();
+                ro = JsonConvert.DeserializeObject<List<IndexCatalogo>>(json);
+            }
+            return ro.ToList();
+            return ro.OrderBy(a => a.Titulo).ToList();
+        }*/
+
+
+
+        //    public IndexObj0 Lista()
+        //{
+        //    IndexObj0 ro;
+
+
+
+        //    using (var stream = new FileStream("../AppMorereNovo/wwwroot/galeria3.json", FileMode.Open)) 
+        //    using (StreamReader r = new StreamReader(stream))
+        //    {
+        //        string json = r.ReadToEnd();
+        //        ro = JsonConvert.DeserializeObject<IndexObj0>(json);
+        //    }
+        //    return ro;
+
+        //}
+
+
+
+
+
     }
 }
 

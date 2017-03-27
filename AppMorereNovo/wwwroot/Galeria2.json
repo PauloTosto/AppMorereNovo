@@ -1,173 +1,122 @@
-﻿[
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto001.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto002.jpg"
-  },
+﻿{
+  "infofoto": [
+    {
+      "caminho": "/SitioOuteiro/img/arrastao/",
+      "titulo": "arrastao",
+      "index": 1,
 
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto003.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto004.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto005.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto006.jpg"
-  },
+      "quadros": [
 
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto007.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto008.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto009.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto010.jpg"
-  },
+        {
+          "intervalo": 2000,
+          "fotos": [
+            "Vfoto001.jpg",
+            "foto002.jpg",
+            "foto003.jpg",
+            "foto004.jpg",
+            "foto005.jpg"
 
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto011.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto012.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto013.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto014.jpg"
-  },
+          ]
+        },
+        {
+          "intervalo": 500,
+          "fotos": [
+            "foto006.jpg",
+            "foto007.jpg",
+            "foto008.jpg",
+            "foto009.jpg",
+            "foto010.jpg",
+            "foto011.jpg"
+          ]
+        },
+        {
+          "intervalo": 500,
+          "fotos": [
+            "foto012.jpg",
+            "foto013.jpg",
+            "foto014.jpg",
+            "foto015.jpg",
+            "foto016.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "caminho": "/SitioOuteiro/img/sitio/",
+      "titulo": "sitio",
+      "index": 2,
 
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto015.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/arrastao/",
-    "titulo": "Arrastao",
-    "foto": "foto016.jpg"
+      "quadros": [
 
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto001.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto002.jpg"
-  },
+        {
+          "intervalo": 1000,
+          "fotos": [
+            "foto001.jpg",
+            "foto002.jpg",
+            "foto003.jpg",
+            "foto004.jpg"
+          ]
+        },
+        {
+          "intervalo": 500,
+          "fotos": [
+            "foto005.jpg",
+            "foto006.jpg",
+            "foto007.jpg",
+            "foto008.jpg"
 
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto003.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto004.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto005.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto006.jpg"
-  },
+          ]
+        },
+        {
+          "intervalo": 1500,
+          "fotos": [
+            "foto009.jpg",
+            "foto010.jpg",
+            "foto011.jpg",
+            "foto012.jpg"
+          ]
+        },
+        {
+          "intervalo": 800,
+          "fotos": [
+            "foto013.jpg",
+            "foto014.jpg",
+            "foto015.jpg",
+            "foto016.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "caminho": "/SitioOuteiro/img/bainema/",
+      "titulo": "bainema",
+      "index": 3,
 
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto007.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto008.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto009.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto010.jpg"
-  },
+      "quadros": [
 
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto011.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto012.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto013.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto014.jpg"
-  },
+        {
+          "intervalo": 1000,
+          "fotos": [
+            "foto001.jpg",
+            "foto002.jpg",
+            "foto003.jpg",
+            "foto004.jpg",
+            "foto005.jpg"
 
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto015.jpg"
-  },
-  {
-    "caminho": "/SitioOuteiro/img/Sitio/",
-    "titulo": "Sitio",
-    "foto": "foto016.jpg"
+          ]
+        },
+        {
+          "intervalo": 500,
+          "fotos": [
+            "foto006.jpg",
+            "foto007.jpg",
+            "foto008.jpg",
+            "foto009.jpg",
+            "foto010.jpg"
 
-  }
-]
-
+          ]
+        }
+      ]
+    }
+  ]
+}

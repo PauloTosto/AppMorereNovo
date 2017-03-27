@@ -1,0 +1,75 @@
+﻿{
+  "infofoto": [
+    {
+      "caminho": "/SitioOuteiro/img/arrastao/",
+      "titulo": "arrastao",
+      "index": 1,
+      "fotos": [
+
+        "foto001.jpg",
+        "foto002.jpg",
+        "foto003.jpg",
+        "foto004.jpg",
+        "foto005.jpg",
+        "foto006.jpg",
+        "foto007.jpg",
+        "foto008.jpg",
+        "foto009.jpg",
+        "foto010.jpg",
+        "foto011.jpg",
+        "foto012.jpg",
+        "foto013.jpg",
+        "foto014.jpg",
+        "foto015.jpg",
+        "foto016.jpg"
+
+      ]
+    },
+    {
+
+      "caminho": "/SitioOuteiro/img/sitio/",
+      "titulo": "sitio",
+      "index": 2,
+      "fotos": [
+        "foto001.jpg",
+        "foto002.jpg",
+        "foto003.jpg",
+        "foto004.jpg",
+        "foto005.jpg",
+        "foto006.jpg",
+        "foto007.jpg",
+        "foto008.jpg",
+        "foto009.jpg",
+        "foto010.jpg",
+        "foto011.jpg",
+        "foto012.jpg",
+        "foto013.jpg",
+        "foto014.jpg",
+        "foto015.jpg",
+        "foto016.jpg"
+
+      ]
+    },
+    {
+
+      "caminho": "/SitioOuteiro/img/bainema/",
+      "titulo": "bainema",
+      "index": 2,
+
+      "fotos": [
+        "foto001.jpg",
+        "foto002.jpg",
+        "foto003.jpg",
+        "foto004.jpg",
+        "foto005.jpg",
+        "foto006.jpg",
+        "foto007.jpg",
+        "foto008.jpg",
+        "foto009.jpg",
+        "foto010.jpg"
+
+      ]
+    }
+  ]
+}
+

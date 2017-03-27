@@ -1,0 +1,26 @@
+﻿{
+  "EVTS": {
+    "EVT": [
+      {
+        "ID": "123456",
+        "KEY1": "somekey",
+        "CATEG": [
+          "cat1",
+          "cat2",
+          "cat3"
+        ]
+      },
+      {
+        "ID": "9123456",
+        "KEY1": "otherkey",
+        "CATEG": [
+          "cat4",
+          "cat2",
+          "cat3"
+        ]
+      }
+    ]
+    
+  }
+
+}

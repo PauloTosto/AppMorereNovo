@@ -15,8 +15,9 @@
     <Content Include="wwwroot\demoAngularJS.html">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="wwwroot\galeria .json" />
+    <Content Include="wwwroot\galeria.json" />
     <Content Include="wwwroot\Galeria2.json" />
+    <Content Include="wwwroot\galeria3.json" />
     <Content Include="wwwroot\js\DemoAngular.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -34,6 +35,7 @@
     <Content Include="wwwroot\js\modernizr-2.6.2.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\js\NovaGaleria.js" />
     <Content Include="wwwroot\lib\angular-route\.bower.json">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -539,6 +541,7 @@
     <Content Include="wwwroot\SitioOuteiro\Web.config">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\testejson.json" />
     <Content Include="wwwroot\_references.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

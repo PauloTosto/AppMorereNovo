@@ -1,0 +1,163 @@
+﻿[
+
+  {
+    "caminho": "/SitioOuteiro/img/arrastao/",
+    "titulo": "arrastao",
+    "index": 1,
+    "fotos": [{
+      "foto": "foto001.jpg"
+    },
+    {
+      "foto": "foto002.jpg"
+    },
+
+    {
+      "foto": "foto003.jpg"
+    },
+    {
+      "foto": "foto004.jpg"
+    },
+    {
+      "foto": "foto005.jpg"
+    },
+    {
+      "foto": "foto006.jpg"
+    },
+
+    {
+      "foto": "foto007.jpg"
+    },
+    {
+      "foto": "foto008.jpg"
+    },
+    {
+      "foto": "foto009.jpg"
+    },
+    {
+      "foto": "foto010.jpg"
+    },
+
+    {
+      "foto": "foto011.jpg"
+    },
+    {
+      "foto": "foto012.jpg"
+    },
+    {
+      "foto": "foto013.jpg"
+    },
+    {
+      "foto": "foto014.jpg"
+    },
+
+    {
+      "foto": "foto015.jpg"
+    },
+    {
+      "foto": "foto016.jpg"
+
+    }
+    ]
+  },
+  {
+    "caminho": "/SitioOuteiro/img/sitio/",
+    "titulo": "sitio",
+    "index": 2,
+    "fotos": [
+      {
+        "foto": "foto001.jpg"
+      },
+      {
+        "foto": "foto002.jpg"
+      },
+
+      {
+        "foto": "foto003.jpg"
+      },
+      {
+        "foto": "foto004.jpg"
+      },
+      {
+        "foto": "foto005.jpg"
+      },
+      {
+        "foto": "foto006.jpg"
+      },
+
+      {
+        "foto": "foto007.jpg"
+      },
+      {
+        "foto": "foto008.jpg"
+      },
+      {
+        "foto": "foto009.jpg"
+      },
+      {
+        "foto": "foto010.jpg"
+      },
+
+      {
+        "foto": "foto011.jpg"
+      },
+      {
+        "foto": "foto012.jpg"
+      },
+      {
+        "foto": "foto013.jpg"
+      },
+      {
+        "foto": "foto014.jpg"
+      },
+
+      {
+        "foto": "foto015.jpg"
+      },
+      {
+        "foto": "foto016.jpg"
+
+      }
+    ]
+  },
+  {
+    "caminho": "/SitioOuteiro/img/bainema/",
+    "titulo": "teste",
+    "index": 3,
+    "fotos": [
+      {
+        "foto": "foto001.jpg"
+      },
+      {
+        "foto": "foto002.jpg"
+      },
+
+      {
+        "foto": "foto003.jpg"
+      },
+      {
+        "foto": "foto004.jpg"
+      },
+      {
+        "foto": "foto005.jpg"
+      },
+      {
+        "foto": "foto006.jpg"
+      },
+
+      {
+        "foto": "foto007.jpg"
+      },
+      {
+        "foto": "foto008.jpg"
+      },
+      {
+        "foto": "foto009.jpg"
+      },
+      {
+        "foto": "foto010.jpg"
+      }
+    ]
+  }
+]
+
+

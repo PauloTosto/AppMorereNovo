@@ -36,8 +36,8 @@ namespace AppMorereNovo
             // Add framework services.
             services.AddMvc();
              
-            services.AddScoped<IGaleriaRepository, GaleriaRepository>();
-          //  services.AddTransient<IGaleriaRepository, GaleriaRepository>();
+            //services.AddScoped<IGaleriaRepository, GaleriaRepository>();
+            services.AddTransient<IGaleriaRepository, GaleriaRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,11 +5,11 @@ namespace AppMorereNovo.Interface
 {
     public interface IGaleriaRepository
     {
-        List<GaleriaFoto> List();
-        //GaleriaFoto GetByTitulo(string titulo);
+        List<IndexCatalogo> List();
+        //   IndexObj0 Lista();
+        CatFotos Pesquisa();
 
-        List<GaleriaFoto> ListByTitulo(string titulo);
-   //     List<Author> GetByNameSubstring(string nameSubstring);
+        SuperCatFotos SuperPesquisa();
 
     }
 }

@@ -36,7 +36,7 @@ namespace AppMorereNovo.Controllers
 
         //GET: api/galeria
         [HttpGet]
-        public IActionResult Galeria()
+        public IActionResult NovaGaleria()
         {
             //var resultado = _galeriaRepository.List();
             //return View(resultado);

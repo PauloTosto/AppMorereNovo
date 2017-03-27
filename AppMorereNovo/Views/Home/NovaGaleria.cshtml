@@ -1,0 +1,84 @@
+﻿@*@model IEnumerable<AppMorereNovo.Models.GaleriaFoto>*@
+@using System.Threading.Tasks;
+@using AppMorereNovo.Interface;
+@inject IGaleriaRepository galRepository;
+
+@{
+    // var novo = galRepository.Lista();
+    var modelo = galRepository.SuperPesquisa().InfoFoto;
+    ViewData["Title"] = "Galeria";
+
+}
+
+<div class="row" style="max-width:1000px;" margin:0 auto;">
+    @*<h6>Escolha a Galeria</h6>*@
+
+    <div class="minha">
+        <ul id="nav" style="list-style:none;max-width:1000px;margin:0 auto">
+            @{
+                var novopath = "";
+                //var ind = 0;
+                @foreach (var item in modelo)
+                {
+
+                    if (item.Titulo != novopath)
+                    {
+                        // ind = ind + 1;
+                        //var indice = ind.ToString();
+                        novopath = item.Titulo;
+                        <li style="float:left;min-width:80px;">
+                            <a href="#" rel=@item.oindex id=@item.Titulo>  @item.Titulo   </a>
+                        </li>
+
+                    }
+                }
+            }
+
+            @*<li style="float:left;min-width:80px;"><a href="#" rel="1">Arrastão </a></li>
+                <li style="float:left;min-width:80px;"><a href="#" rel="2">Passado </a></li>*@
+        </ul>
+
+    </div>
+
+</div>
+
+<div class="row" id="rowCarousel" style="margin:0 auto;max-width:1200px;">
+
+    
+
+</div>
+
+
+
+@section scripts{
+    <style>
+        .col-md-3 {
+            /*max-width: 590px;
+
+            max-height: 405px;*/
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            padding-left: 0cm;
+            padding-right: 0px;
+            padding-top: 0px;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+    $('#rowCarousel').hide();
+    var MyNames = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(modelo))');
+       
+
+
+
+
+    </script>
+
+    <script src="~/js/NovaGaleria.js"></script>
+}
+
+
+
+
