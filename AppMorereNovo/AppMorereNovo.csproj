@@ -15,7 +15,6 @@
     <Content Include="wwwroot\demoAngularJS.html">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="wwwroot\galeria.json" />
     <Content Include="wwwroot\Galeria2.json" />
     <Content Include="wwwroot\galeria3.json" />
     <Content Include="wwwroot\js\DemoAngular.js">
@@ -135,6 +134,8 @@
     <Content Include="wwwroot\SitioOuteiro\fotos.htm">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\SitioOuteiro\img\Ang Boca Esquerda.jpg" />
+    <Content Include="wwwroot\SitioOuteiro\img\Ang Olho Esquerdo.jpg" />
     <Content Include="wwwroot\SitioOuteiro\img\arrastao\foto001.JPG">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -192,6 +193,10 @@
     <Content Include="wwwroot\SitioOuteiro\img\arrastao\foto019.JPG">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\SitioOuteiro\img\Aérea-Inferior Direita.JPG" />
+    <Content Include="wwwroot\SitioOuteiro\img\Aérea-Inferior Esquerda.JPG" />
+    <Content Include="wwwroot\SitioOuteiro\img\Aérea-Superior Direita.JPG" />
+    <Content Include="wwwroot\SitioOuteiro\img\Aérea-Superior Esquerda.JPG" />
     <Content Include="wwwroot\SitioOuteiro\img\Aéreas\IMG_01.JPG">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -246,6 +251,8 @@
     <Content Include="wwwroot\SitioOuteiro\img\bainema\foto010.JPG">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="wwwroot\SitioOuteiro\img\Brad Boca Direita.jpg" />
+    <Content Include="wwwroot\SitioOuteiro\img\Bred Olho Esquerdo.jpg" />
     <Content Include="wwwroot\SitioOuteiro\img\caramuru.jpg">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

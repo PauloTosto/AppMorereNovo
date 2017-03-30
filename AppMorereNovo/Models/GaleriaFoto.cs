@@ -27,22 +27,7 @@ namespace AppMorereNovo.Models
         public List<IndexCatalogo> InfoFoto { get; set; }
     }
 
-    //galeria2
-    //definir a classe mais baixa hierarquia
-    public class quadro
-    {
-        [JsonProperty("intervalo")]
-        public Int16 intervalo { get; set; }
-        [JsonProperty("Fotos")]
-        public List<string> Fotos { get; set; }
-    }
-
-    public class SuperCatFotos
-    {
-        [JsonProperty("InfoFoto")]
-        public List<SuperCatalogo> InfoFoto { get; set; }
-    }
-
+    
 
 
     //exemplo

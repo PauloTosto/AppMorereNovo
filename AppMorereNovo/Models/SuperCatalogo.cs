@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Newtonsoft.Json;
 
 namespace AppMorereNovo.Models
 {
@@ -10,6 +10,22 @@ namespace AppMorereNovo.Models
     //    public infoquadro oquadro { get; set; }
 
     //}
+
+    //galeria2
+    //definir a classe mais baixa hierarquia
+    public class quadro
+    {
+        [JsonProperty("intervalo")]
+        public Int16 intervalo { get; set; }
+        [JsonProperty("Fotos")]
+        public List<string> Fotos { get; set; }
+    }
+
+    public class SuperCatFotos
+    {
+        [JsonProperty("InfoFoto")]
+        public List<SuperCatalogo> InfoFoto { get; set; }
+    }
 
     public class SuperCatalogo
     {

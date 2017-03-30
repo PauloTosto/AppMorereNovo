@@ -10,8 +10,8 @@
 
 }
 
-<div class="row" style="max-width:1000px;" margin:0 auto;">
-    @*<h6>Escolha a Galeria</h6>*@
+<div class="row" style="max-width:1000px; margin:0 auto;">
+    @*Escolha a Galeria*@
 
     <div class="minha">
         <ul id="nav" style="list-style:none;max-width:1000px;margin:0 auto">
@@ -34,15 +34,14 @@
                 }
             }
 
-            @*<li style="float:left;min-width:80px;"><a href="#" rel="1">Arrastão </a></li>
-                <li style="float:left;min-width:80px;"><a href="#" rel="2">Passado </a></li>*@
         </ul>
 
     </div>
 
 </div>
 
-<div class="row" id="rowCarousel" style="margin:0 auto;max-width:1200px;">
+
+<div class="row" id="rowCarousel" >@*style="margin:0 auto;width:auto">*@
 
     
 
@@ -51,18 +50,145 @@
 
 
 @section scripts{
-    <style>
-        .col-md-3 {
-            /*max-width: 590px;
+    
+    
+<style type="text/css" media="screen and (min-width:901px) ">
+    .col-md-3 {
+        width: 450px;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0cm;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
 
-            max-height: 405px;*/
-            width: auto;
+    .row {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 901px;
+    }
+</style>
+
+
+    <style type="text/css" media="screen and (min-width:769px) and (max-width:900px)" >
+        .col-md-3 {
+             width: 350px;
             height: auto;
             margin: 0 auto;
             padding-left: 0cm;
             padding-right: 0px;
             padding-top: 0px;
         }
+
+        .row {
+            max-width: 1200px;
+            margin: 0 auto;
+            width:770px;
+        }
+       
+    
+    </style>
+    
+  <style type="text/css" media="screen and (min-width:601px) and (max-width:768px)">
+    .col-sm-4 {
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0cm;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+      .row {
+          max-width: 768px;
+          margin: 0 auto;
+          width: 601px;
+      }
+</style>
+
+
+
+
+  
+  <style type="text/css" media="screen and  (min-width:481px) and (max-width:600px)">
+    .col-xs-4 {
+        /*max-width: 590px;
+
+      max-height: 405px;*/
+        width: 230px;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 0cm;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+      .row {
+          max-width: 480px;
+          margin: 0 auto;
+          width: 482px;
+      }
+</style>
+
+
+
+  
+    
+
+   <style type="text/css" media="screen and  (max-width:480px)">
+       .col-xs-4 {
+           /*max-width: 590px;
+
+         max-height: 405px;*/
+           width: 175px;
+           height: auto;
+           margin: 0 auto;
+           padding-left: 0cm;
+           padding-right: 0px;
+           padding-top: 0px;
+         
+       }
+       .row {
+           max-width: 480px;
+           margin: 0 auto;
+           width:350px;
+       }
+     
+
+  </style>
+
+
+    <style>
+
+        /*
+inspired from http://codepen.io/Rowno/pen/Afykb 
+*/
+        .carousel-fade .carousel-inner .item {
+            opacity: 0.5;
+            transition-property: opacity;
+        }
+
+        .carousel-fade .carousel-inner .active {
+            opacity: 1;
+        }
+
+            .carousel-fade .carousel-inner .active.left,
+            .carousel-fade .carousel-inner .active.right {
+                left: 0;
+                opacity: 0.5;
+                z-index: 1;
+            }
+
+        .carousel-fade .carousel-inner .next.left,
+        .carousel-fade .carousel-inner .prev.right {
+            opacity: 1;
+        }
+
+        .carousel-fade .carousel-control {
+            z-index: 2;
+        }
+
+
     </style>
 
 

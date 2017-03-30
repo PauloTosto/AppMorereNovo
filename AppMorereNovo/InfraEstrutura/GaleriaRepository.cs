@@ -32,7 +32,7 @@ namespace AppMorereNovo.InfraEstrutura
         public List<IndexCatalogo> List()
         {
             
-            SuperCatFotos re = SuperPesquisa();
+            //SuperCatFotos re = SuperPesquisa();
 
 
             CatFotos ra = Pesquisa();
