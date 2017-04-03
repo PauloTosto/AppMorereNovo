@@ -17,6 +17,7 @@
     </Content>
     <Content Include="wwwroot\Galeria2.json" />
     <Content Include="wwwroot\galeria3.json" />
+    <Content Include="wwwroot\js\CarouselAnima.js" />
     <Content Include="wwwroot\js\DemoAngular.js">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

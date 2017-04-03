@@ -27,10 +27,10 @@
             var quadro = MyNames[ind].Quadros[t];
 
             var interval_Carousel = quadro.intervalo;
-
+            var demora = quadro.delay;
             numCarousel = (t + 1);
             var colunaCarousel = '<div class="col-xs-4 col-md-3 col-sm-4" id="meu' + numCarousel + '">' +
-                ' <div id="myCarousel' + numCarousel + '" class="carousel slide carousel-fade"   data-ride="" dir="next" data-interval="' + interval_Carousel + '">' +
+                ' <div id="myCarousel' + numCarousel + '" class="carousel slide carousel-fade active"   data-ride="carousel" data-pause="false" dir="next" data-interval="' + interval_Carousel + '">' +
                 '<ol class="carousel-indicators"></ol>' +
                 '<div class="carousel-inner" role="listbox">' +
                 '</div>' +
@@ -49,73 +49,120 @@
             var z = 0;
             var i = 0;
             tam = quadro.Fotos.length;
-            var direcao = "";
+            
             for (var y = 0; y < tam; y++) {
                 var imgDir = MyNames[ind].Caminho + quadro.Fotos[y];
 
                 var activo = "active";
-                //if ((numCarousel % 2) == 0)
-                // {
-                //    z = (tam - 1) - y; 
-                //   direcao = "prev";
-                //}
-                //else
-                //{
-                 
-                //   direcao = "next";
-                //}
                 z = 0;
                 
                 if (y == 0) {
 
-                    $('#meu' + num_meu + ' .carousel-indicators').append('<li data-target="#myCarousel' + num_meu + '" data-slide="' + z + '" class="active"></li>');
+                   // $('#meu' + num_meu + ' .carousel-indicators').append('<li data-target="#myCarousel' + num_meu + '" data-slide="' + z + '" class="active"></li>');
                     $('#meu' + num_meu + ' .carousel-inner').append('<div class="item active"><img src="' + imgDir + '" alt="1" class="img-responsive" /></div>');
 
                 }
                 else {
-                    $('#meu' + num_meu + ' .carousel-indicators').append('<li data-target="#myCarousel' + num_meu + '" data-slide="' + z + '"></li>');
+                   // $('#meu' + num_meu + ' .carousel-indicators').append('<li data-target="#myCarousel' + num_meu + '" data-slide="' + z + '"></li>');
                     $('#meu' + num_meu + ' .carousel-inner').append('<div class="item"><img src="' + imgDir + '" alt="' + z + '" class="img-responsive" /></div>');
                 }
             }
+
+            if ( (demora <= 0) || (demora == undefined) || (demora == null))
+            {
+                $('#myCarousel' + num_meu).carousel({
+                    cycle: true, pause: false
+                });
+            }
+            else
+            {
+                var parametro = '#myCarousel' + num_meu;
+                $(parametro).carousel('pause');
+                setTimeout(function (parametro) {
+
+                    $(parametro).carousel({
+                        cycle: true, pause: false
+                    });
+                }, demora, parametro
+                );
+            }
+
             
         }
         
         
         
 
-        numCarousel = numCarousel + 1;
-        var direcao = "";
-        for (var num_meu = 1; num_meu < numCarousel; num_meu++) {
+        //numCarousel = numCarousel + 1;
+        
+        //for (var num_meu = 1; num_meu < numCarousel; num_meu++) {
 
-          //  $('#myCarousel' + num_meu).carousel({
-            //    cycle: true, pause: false, ride:"next"
-           // });
+        //    //exemplo de uso de evento
+        //    //if (num_meu == 2) {
+        //    //    $('#myCarousel' + num_meu).on('slide.bs.carousel', function (e) {
+        //    //        $ativada = $(this).hasClass('active');
+        //    //        if ($ativada == true) {
+        //    //            $(this).removeClass('active');
+        //    //            var parametro = '#'+$(this).attr('id');
+        //    //            $(parametro).carousel('pause');
+        //    //            setTimeout(function (parametro) {
+
+        //    //                $(parametro).carousel({
+        //    //                     pause: false
+        //    //                });
+        //    //            }, 1000, parametro
+        //    //            );
+        //    //        }
+        //    //    });
+
+        //    //}
             
-            //if ((num_meu % 2) == 0) {
-            //    direcao = "Prev";
-              //  $('#myCarousel' + num_meu).on('slide.bs.carousel', function () {
-                   // this.attr("data-interval","6000");
-               // })
-            //    $('#myCarousel' + num_meu).carousel("prev");
+        //    if (num_meu == 4) {
+        //        var parametro = '#myCarousel' + num_meu;
+        //        $(parametro).carousel('pause');
+        //        setTimeout(function (parametro) {
 
-           // }
-            //else {
-              //  $('#myCarousel' + num_meu).carousel("next");
+        //            $(parametro).carousel({
+        //                cycle: true, pause: false
+        //            });
+        //        }, 1000, parametro
+        //        );
+        //    }
 
-              //  direcao = "Next";
-                //$('#myCarousel' + num_meu).on('slide.bs.carousel', function () {
-                 //   this.ride = "next";
-                //});
-            //}
-               
-            $('#myCarousel' + num_meu).carousel({
-                cycle: true, pause: false
-            });
+        //    if (num_meu == 3) {
+        //        var parametro = '#myCarousel' + num_meu;
+        //        $(parametro).carousel('pause');
+        //        setTimeout(function (parametro) {
+
+        //            $(parametro).carousel({
+        //                cycle: true, pause: false
+        //            });
+        //        }, 2000, parametro
+        //        );
+        //    }
+
+        //    if (num_meu == 1) {
+        //        var parametro = '#myCarousel' + num_meu;
+        //        $(parametro).carousel('pause');
+        //        setTimeout(function (parametro) {
+
+        //            $(parametro).carousel({
+        //                cycle: true, pause: false
+        //            });
+        //        }, 3000, parametro
+        //        );
+        //    }
+        //    if (num_meu == 2) {
+        //        $('#myCarousel' + num_meu).carousel({
+        //            cycle: true, pause: false
+        //        });
+        //    };
+            
 
             
-           // $('#meu' + num_meu).show();
+        //    // $('#meu' + num_meu).show();
 
-        }
+        //}
 
         $('.row').show();
         $('.carousel-indicators').hide();

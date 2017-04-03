@@ -8,41 +8,41 @@
       "quadros": [
 
         {
-          
-          "intervalo": 4000,
+
+          "intervalo": 5000,
+          "delay": 3000,
           "fotos": [
             "Ang Olho Esquerdo.jpg",
-            "Brad Olho Esquerdo.jpg"
-             ,
-           "Aérea-superior Esquerda.jpg"
+            "Brad Olho Esquerdo.jpg",
+            "Aérea-superior Esquerda.jpg"
 
           ]
         },
         {
-          "intervalo":2000,
+          "intervalo": 5000,
+          "delay": 0,
           "fotos": [
             "Ang Olho Direito.jpg",
-            "Brad Olho Direito.jpg"
-              ,
+            "Brad Olho Direito.jpg",
             "Aérea-superior Direita.jpg"
           ]
         },
         {
-          "intervalo": 1000 ,
+          "intervalo": 5000,
+          "delay": 2000,
           "fotos": [
             "Ang Boca Esquerda.jpg",
-            "Brad Boca Esquerda.jpg"
-              , 
+            "Brad Boca Esquerda.jpg",
             "Aérea-inferior Esquerda.jpg"
 
           ]
         },
         {
-          "intervalo": 500,
+          "intervalo": 5000,
+          "delay": 1000,
           "fotos": [
             "Ang Boca Direita.jpg",
-            "Brad Boca Direita.jpg" 
-              ,
+            "Brad Boca Direita.jpg",
             "Aérea-inferior Direita.jpg"
           ]
         }

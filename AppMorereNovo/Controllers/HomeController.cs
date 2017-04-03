@@ -44,6 +44,14 @@ namespace AppMorereNovo.Controllers
 
         }
 
+        [HttpGet]
+        public IActionResult CarouselAnima()
+        {
+            //var resultado = _galeriaRepository.List();
+            //return View(resultado);
+            return View();
+
+        }
 
         //public async Task<IActionResult> Galeria() 
         //{

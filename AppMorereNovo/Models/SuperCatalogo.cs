@@ -17,6 +17,9 @@ namespace AppMorereNovo.Models
     {
         [JsonProperty("intervalo")]
         public Int16 intervalo { get; set; }
+        [JsonProperty("delay")]
+        public Int16 delay { get; set; }
+
         [JsonProperty("Fotos")]
         public List<string> Fotos { get; set; }
     }
