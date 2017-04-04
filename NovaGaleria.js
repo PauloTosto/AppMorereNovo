@@ -22,27 +22,14 @@
         var numCarousel = 0;
         //var interval_Carousel = 0;
 
-        var colunas = MyNames[ind].colunas_linha;
-        var behavior = MyNames[ind].behavior;
-        checkSize(colunas);
-        var tipoclass = "col-xs-6 col-md-6 col-sm-6";
-        if (colunas == 3)
-        {
-            tipoclass = "col-xs-4 col-md-4 col-sm-4";
-        }
-        if (colunas == 4) {
-            tipoclass = "col-xs-3 col-md-3 col-sm-3";
-        }
-        
-
         for (var t = 0; t < totquadros;t++ )
         {
             var quadro = MyNames[ind].Quadros[t];
-        
+
             var interval_Carousel = quadro.intervalo;
             var demora = quadro.delay;
             numCarousel = (t + 1);
-            var colunaCarousel = '<div class=' + tipoclass + '+ id="meu' + numCarousel + '" style="margin:0 auto;padding:0;" >' +
+            var colunaCarousel = '<div class="col-xs-4 col-md-3 col-sm-4" id="meu' + numCarousel + '">' +
                 ' <div id="myCarousel' + numCarousel + '" class="carousel slide carousel-fade active"   data-ride="carousel" data-pause="false" dir="next" data-interval="' + interval_Carousel + '">' +
                 '<ol class="carousel-indicators"></ol>' +
                 '<div class="carousel-inner" role="listbox">' +
@@ -56,9 +43,6 @@
                 '</div>' +
                 '</div>';
             $('#rowCarousel').append(colunaCarousel).hide();
-
-
-          
             
             
             var num_meu = numCarousel;
@@ -88,62 +72,29 @@
             {
                 $('#myCarousel' + num_meu).carousel({
                     cycle: true, pause: false
+
                 });
-                ///
-                //$('#myCarousel' + num_meu).on('slide.bs.carousel', function (e) {
-                //    $ativada = $(this).hasClass('active');
-                //    if ($ativada == true) {
-                //        $(this).removeClass('active');
-                //        var parametro = '#' + $(this).attr('id');
-                //        $(parametro).carousel('pause');
-                //        setTimeout(function (parametro) {
-
-                //            $(parametro).carousel({
-                //                pause: false
-                //            });
-                //        }, 1000, parametro
-                //        );
-                //    }
-                //});
-
-
-
+                $('myCarousel' + num_meu).on()
             }
             else
             {
                 var parametro = '#myCarousel' + num_meu;
                 $(parametro).carousel('pause');
+                $(parametro).hide();
                 setTimeout(function (parametro) {
-
+                    $(parametro).show();
                     $(parametro).carousel({
                         cycle: true, pause: false
                     });
                 }, demora, parametro
                 );
             }
-               
-
-
-
-
 
             
         }
-
         
-        //var elements = document.querySelectorAll('.col-md-3');
-        //for (var i = 0; i < elements.length; i++) {
-        //    elements[i].style.width = colmd_tam + "px";
-        //}
-        //var elements = document.querySelectorAll('.col-xs-4');
-        //for (var i = 0; i < elements.length; i++) {
-        //    elements[i].style.width = colxs_tam + "px";
-        //}
-        //var elements = document.querySelectorAll('.col-sm-4');
-        //for (var i = 0; i < elements.length; i++) {
-        //    elements[i].style.width = colsm_tam + "px";
-        //}
-
+        
+        
 
         //numCarousel = numCarousel + 1;
         
@@ -222,39 +173,5 @@
      
     });
     $('#nav li a').eq(0).click();
-    //$(this.windows).resize(checkSize);
 });
 
-function checkSize(colunas) {
-    var colmd = $('.col-md-3');
-    var colxs = $('.col-xs-4');
-    var colsm = $('.col-sm-4');
-  //  $(".col-md-3").css({ "width": "220px" });
-
-    if ((colunas == 2) || (colunas == undefined)) //default
-    {
-        //if (colmd != undefined) {
-        //    $('.col-md-3').css('width', '350px');
-        //}
-        //if (colxs != undefined) {
-
-        //    $('.col-xs-4').css('width', '230px');
-        //}
-        //if (colsm != undefined) {
-
-        //    $('.col-sm-4').css('width', '250px');
-        //}
-    }
-    else
-        if (colunas == 3) {
-            $(".col-md-3").css({ "width": "220px" });
-            $(".col-xs-4").css({ "width": "160px" });
-            $(".col-sm-4").css({ "width": "200px" });
-            
-        }
-
-
-    //if ($(".sampleClass").css("float") == "none") {
-        // your code here
-   // }
-}

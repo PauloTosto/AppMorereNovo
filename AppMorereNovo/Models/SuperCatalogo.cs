@@ -35,7 +35,9 @@ namespace AppMorereNovo.Models
         public Int16 oindex { get; set; }
         public string Caminho { get; set; }
         public string Titulo { get; set; }
-      //  [JsonProperty("Quadros")]
+        public string behavior { get; set; }
+        public Int16 colunas_linha { get; set; }
+        //  [JsonProperty("Quadros")]
         public List<quadro> Quadros { get; set; }
     }
 }

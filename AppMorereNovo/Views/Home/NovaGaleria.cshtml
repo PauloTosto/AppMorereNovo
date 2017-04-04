@@ -7,6 +7,9 @@
     // var novo = galRepository.Lista();
     var modelo = galRepository.SuperPesquisa().InfoFoto;
     ViewData["Title"] = "Galeria";
+    
+
+
 
 }
 
@@ -43,149 +46,98 @@
 
 <div class="row" id="rowCarousel" >@*style="margin:0 auto;width:auto">*@
 
-    
+
 
 </div>
 
 
 
 @section scripts{
+
+
+        
+    @*inspired from http://codepen.io/Rowno/pen/Afykb*@
     
-    
+
+
+        
 <style type="text/css" media="screen and (min-width:901px) ">
-    .col-md-3 {
-        width: 450px;
-        height: auto;
-        margin: 0 auto;
-        padding-left: 0cm;
-        padding-right: 0px;
-        padding-top: 0px;
-    }
-
     .row {
-        max-width: 1200px;
+        max-width: 900px;
         margin: 0 auto;
-        width: 901px;
+        width: 750px;
     }
-</style>
-
-
-    <style type="text/css" media="screen and (min-width:769px) and (max-width:900px)" >
-        .col-md-3 {
-             width: 350px;
-            height: auto;
-            margin: 0 auto;
-            padding-left: 0cm;
-            padding-right: 0px;
-            padding-top: 0px;
-        }
-
-        .row {
-            max-width: 1200px;
-            margin: 0 auto;
-            width:770px;
-        }
-       
-    
     </style>
-    
-  <style type="text/css" media="screen and (min-width:601px) and (max-width:768px)">
-    .col-sm-4 {
-        width: 250px;
-        height: auto;
-        margin: 0 auto;
-        padding-left: 0cm;
-        padding-right: 0px;
-        padding-top: 0px;
-    }
 
-      .row {
-          max-width: 768px;
-          margin: 0 auto;
-          width: 601px;
-      }
-</style>
-  
-  <style type="text/css" media="screen and  (min-width:481px) and (max-width:600px)">
-    .col-xs-4 {
-        /*max-width: 590px;
-
-      max-height: 405px;*/
-        width: 230px;
-        height: auto;
-        margin: 0 auto;
-        padding-left: 0cm;
-        padding-right: 0px;
-        padding-top: 0px;
-    }
-
-      .row {
-          max-width: 480px;
-          margin: 0 auto;
-          width: 482px;
-      }
-</style>
-
-   <style type="text/css" media="screen and  (max-width:480px)">
-       .col-xs-4 {
-           /*max-width: 590px;
-
-         max-height: 405px;*/
-           width: 175px;
-           height: auto;
-           margin: 0 auto;
-           padding-left: 0cm;
-           padding-right: 0px;
-           padding-top: 0px;
-         
-       }
-       .row {
-           max-width: 480px;
-           margin: 0 auto;
-           width:350px;
-       }
+    <style type="text/css" media="screen and (min-width:769px) and (max-width:900px)" > 
      
+    .row {
+        max-width: 769px;
+        margin: 0 auto;
+        width: 750px;
+      }
+</style>
 
-  </style>
+<style type="text/css" media="screen and (min-width:601px) and (max-width:768px)">
+   
+    .row {
+        max-width: 768px;
+        margin: 0 auto;
+        width: 601px;
+    }
+</style>
+
+<style type="text/css" media="screen and  (min-width:481px) and (max-width:600px)">
+  
+    .row {
+        max-width: 480px;
+        margin: 0 auto;
+        width: 482px;
+    }
+</style>
+
+<style type="text/css" media="screen and  (max-width:480px)">
+  
+    .row {
+        max-width: 480px;
+        margin: 0 auto;
+        width: 350px;
+    }
+</style>
 
 
-    <style>
+<style>
+    .ativada {
+    }
 
-        /*
-inspired from http://codepen.io/Rowno/pen/Afykb 
-*/
+    .carousel-fade .carousel-inner .item {
+        opacity: 0.5;
+        transition-property: opacity;
+    }
 
-        .ativada {
+    .carousel-fade .carousel-inner .active {
+        opacity: 1;
+    }
 
-        }
-
-        .carousel-fade .carousel-inner .item {
+        .carousel-fade .carousel-inner .active.left,
+        .carousel-fade .carousel-inner .active.right {
+            left: 0;
             opacity: 0.5;
-            transition-property: opacity;
+            z-index: 1;
         }
 
-        .carousel-fade .carousel-inner .active {
-            opacity: 1;
-        }
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+    }
 
-            .carousel-fade .carousel-inner .active.left,
-            .carousel-fade .carousel-inner .active.right {
-                left: 0;
-                opacity: 0.5;
-                z-index: 1;
-            }
-
-        .carousel-fade .carousel-inner .next.left,
-        .carousel-fade .carousel-inner .prev.right {
-            opacity: 1;
-        }
-
-        .carousel-fade .carousel-control {
-            z-index: 2;
-        }
+    .carousel-fade .carousel-control {
+        z-index: 2;
+    }
+</style>
 
 
-    </style>
+
 
 
     <script type="text/javascript">

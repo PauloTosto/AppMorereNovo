@@ -3,8 +3,8 @@
     {
       "caminho": "/SitioOuteiro/img/mosaico/",
       "titulo": "Bradlina",
-      "index": 1,
-
+      "behavior": "album",
+      "colunas_linha": 4,
       "quadros": [
 
         {
@@ -45,47 +45,84 @@
             "Brad Boca Direita.jpg",
             "Aérea-inferior Direita.jpg"
           ]
+        },
+        {
+
+          "intervalo": 5000,
+          "delay": 3000,
+          "fotos": [
+            "Ang Olho Esquerdo.jpg",
+            "Brad Olho Esquerdo.jpg",
+            "Aérea-superior Esquerda.jpg"
+
+          ]
+        },
+        {
+          "intervalo": 5000,
+          "delay": 0,
+          "fotos": [
+            "Ang Olho Direito.jpg",
+            "Brad Olho Direito.jpg",
+            "Aérea-superior Direita.jpg"
+          ]
+        },
+        {
+          "intervalo": 5000,
+          "delay": 2000,
+          "fotos": [
+            "Ang Boca Esquerda.jpg",
+            "Brad Boca Esquerda.jpg",
+            "Aérea-inferior Esquerda.jpg"
+
+          ]
+        },
+        {
+          "intervalo": 5000,
+          "delay": 1000,
+          "fotos": [
+            "Ang Boca Direita.jpg",
+            "Brad Boca Direita.jpg",
+            "Aérea-inferior Direita.jpg"
+          ]
         }
-        
+
+
       ]
     },
     {
-      "caminho": "/SitioOuteiro/img/arrastao/",
-      "titulo": "arrastao",
-      "index": 1,
+      "caminho": "/SitioOuteiro/img/Evo/",
+      "titulo": "Evolucao",
+      "behavior": "cinema",
+      "colunas_linha": 3,
 
       "quadros": [
 
         {
-          "intervalo": 2000,
+
+          "intervalo": 5000,
+          "delay": 0,
           "fotos": [
-            "Vfoto001.jpg",
-            "foto002.jpg",
-            "foto003.jpg",
-            "foto004.jpg",
-            "foto005.jpg"
+            "ev1.jpg",
+            "ev4.jpg"
+
 
           ]
         },
         {
-          "intervalo": 500,
+          "intervalo": 5000,
+          "delay": 2000,
           "fotos": [
-            "foto006.jpg",
-            "foto007.jpg",
-            "foto008.jpg",
-            "foto009.jpg",
-            "foto010.jpg",
-            "foto011.jpg"
+            "ev2.jpg",
+            "ev5.jpg"
           ]
         },
+
         {
-          "intervalo": 500,
+          "intervalo": 5000,
+          "delay": 3000,
           "fotos": [
-            "foto012.jpg",
-            "foto013.jpg",
-            "foto014.jpg",
-            "foto015.jpg",
-            "foto016.jpg"
+            "ev3.jpg",
+            "ev6.jpg"
           ]
         }
       ]
@@ -93,8 +130,8 @@
     {
       "caminho": "/SitioOuteiro/img/sitio/",
       "titulo": "sitio",
-      "index": 2,
-
+      "behavior": "album",
+      "colunas_linha": 2,
       "quadros": [
 
         {
@@ -139,8 +176,8 @@
     {
       "caminho": "/SitioOuteiro/img/bainema/",
       "titulo": "bainema",
-      "index": 3,
-
+      "behavior": "album",
+      "colunas_linha": 2,
       "quadros": [
 
         {
@@ -169,3 +206,174 @@
     }
   ]
 }
+//{
+//  "infofoto": [
+//    {
+//      "caminho": "/SitioOuteiro/img/mosaico/",
+//      "titulo": "Bradlina",
+//      "index": 1,
+
+//      "quadros": [
+
+//        {
+
+//          "intervalo": 5000,
+//          "delay": 3000,
+//          "fotos": [
+//            "Ang Olho Esquerdo.jpg",
+//            "Brad Olho Esquerdo.jpg",
+//            "Aérea-superior Esquerda.jpg"
+
+//          ]
+//        },
+//        {
+//          "intervalo": 5000,
+//          "delay": 0,
+//          "fotos": [
+//            "Ang Olho Direito.jpg",
+//            "Brad Olho Direito.jpg",
+//            "Aérea-superior Direita.jpg"
+//          ]
+//        },
+//        {
+//          "intervalo": 5000,
+//          "delay": 2000,
+//          "fotos": [
+//            "Ang Boca Esquerda.jpg",
+//            "Brad Boca Esquerda.jpg",
+//            "Aérea-inferior Esquerda.jpg"
+
+//          ]
+//        },
+//        {
+//          "intervalo": 5000,
+//          "delay": 1000,
+//          "fotos": [
+//            "Ang Boca Direita.jpg",
+//            "Brad Boca Direita.jpg",
+//            "Aérea-inferior Direita.jpg"
+//          ]
+//        }
+        
+//      ]
+//    },
+//    {
+//      "caminho": "/SitioOuteiro/img/arrastao/",
+//      "titulo": "arrastao",
+//      "index": 1,
+
+//      "quadros": [
+
+//        {
+//          "intervalo": 2000,
+//          "fotos": [
+//            "Vfoto001.jpg",
+//            "foto002.jpg",
+//            "foto003.jpg",
+//            "foto004.jpg",
+//            "foto005.jpg"
+
+//          ]
+//        },
+//        {
+//          "intervalo": 500,
+//          "fotos": [
+//            "foto006.jpg",
+//            "foto007.jpg",
+//            "foto008.jpg",
+//            "foto009.jpg",
+//            "foto010.jpg",
+//            "foto011.jpg"
+//          ]
+//        },
+//        {
+//          "intervalo": 500,
+//          "fotos": [
+//            "foto012.jpg",
+//            "foto013.jpg",
+//            "foto014.jpg",
+//            "foto015.jpg",
+//            "foto016.jpg"
+//          ]
+//        }
+//      ]
+//    },
+//    {
+//      "caminho": "/SitioOuteiro/img/sitio/",
+//      "titulo": "sitio",
+//      "index": 2,
+
+//      "quadros": [
+
+//        {
+//          "intervalo": 1000,
+//          "fotos": [
+//            "foto001.jpg",
+//            "foto002.jpg",
+//            "foto003.jpg",
+//            "foto004.jpg"
+//          ]
+//        },
+//        {
+//          "intervalo": 500,
+//          "fotos": [
+//            "foto005.jpg",
+//            "foto006.jpg",
+//            "foto007.jpg",
+//            "foto008.jpg"
+
+//          ]
+//        },
+//        {
+//          "intervalo": 1500,
+//          "fotos": [
+//            "foto009.jpg",
+//            "foto010.jpg",
+//            "foto011.jpg",
+//            "foto012.jpg"
+//          ]
+//        },
+//        {
+//          "intervalo": 800,
+//          "fotos": [
+//            "foto013.jpg",
+//            "foto014.jpg",
+//            "foto015.jpg",
+//            "foto016.jpg"
+//          ]
+//        }
+//      ]
+//    },
+//    {
+//      "caminho": "/SitioOuteiro/img/bainema/",
+//      "titulo": "bainema",
+//      "index": 3,
+
+//      "quadros": [
+
+//        {
+//          "intervalo": 1000,
+//          "fotos": [
+//            "foto001.jpg",
+//            "foto002.jpg",
+//            "foto003.jpg",
+//            "foto004.jpg",
+//            "foto005.jpg"
+
+//          ]
+//        },
+//        {
+//          "intervalo": 500,
+//          "fotos": [
+//            "foto006.jpg",
+//            "foto007.jpg",
+//            "foto008.jpg",
+//            "foto009.jpg",
+//            "foto010.jpg"
+
+//          ]
+//        }
+//      ]
+//    }
+//  ]
+//}
