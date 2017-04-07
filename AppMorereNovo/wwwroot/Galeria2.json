@@ -10,7 +10,7 @@
         {
 
           "intervalo": 5000,
-          "delay": 3000,
+          "delay": 5000,
           "fotos": [
             "Ang Olho Esquerdo.jpg",
             "Brad Olho Esquerdo.jpg",
@@ -29,7 +29,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 2000,
+          "delay": 4000,
           "fotos": [
             "Ang Boca Esquerda.jpg",
             "Brad Boca Esquerda.jpg",
@@ -39,7 +39,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 1000,
+          "delay": 3000,
           "fotos": [
             "Ang Boca Direita.jpg",
             "Brad Boca Direita.jpg",
@@ -49,7 +49,7 @@
         {
 
           "intervalo": 5000,
-          "delay": 3000,
+          "delay": 2000,
           "fotos": [
             "Ang Olho Esquerdo.jpg",
             "Brad Olho Esquerdo.jpg",
@@ -59,7 +59,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 0,
+          "delay": 1500,
           "fotos": [
             "Ang Olho Direito.jpg",
             "Brad Olho Direito.jpg",
@@ -68,7 +68,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 2000,
+          "delay": 1000,
           "fotos": [
             "Ang Boca Esquerda.jpg",
             "Brad Boca Esquerda.jpg",

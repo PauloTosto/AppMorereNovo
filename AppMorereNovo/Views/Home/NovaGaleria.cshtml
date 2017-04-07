@@ -44,7 +44,7 @@
 </div>
 
 
-<div class="row" id="rowCarousel" >@*style="margin:0 auto;width:auto">*@
+<div class="row coordcarousel" id="rowcarousel" >@*style="margin:0 auto;width:auto">*@
 
 
 
@@ -107,9 +107,7 @@
 
 
 <style>
-    .ativada {
-    }
-
+  
     .carousel-fade .carousel-inner .item {
         opacity: 0.5;
         transition-property: opacity;
@@ -144,7 +142,9 @@
       $('#rowCarousel').hide();
       var MyNames = JSON.parse('@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(modelo))');
     </script>
+ 
     <script src="~/js/NovaGaleria.js"></script>
+<script src="~/js/CoordCarousel.js"></script>
 }
 
 
