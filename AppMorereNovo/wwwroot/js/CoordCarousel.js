@@ -25,10 +25,10 @@
     CoordCarousel.TRANSITION_DURATION = 600
 
     CoordCarousel.DEFAULTS = {
-        interval: 5000,
+        
         behavior: 'album',
-        wrap: true,
-        keyboard: true
+                 
+        
     }
 
     //CoordCarousel.prototype.keydown = function (e) {

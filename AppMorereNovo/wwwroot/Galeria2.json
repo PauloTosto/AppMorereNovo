@@ -4,13 +4,15 @@
       "caminho": "/SitioOuteiro/img/mosaico/",
       "titulo": "Bradlina",
       "behavior": "album",
-      "colunas_linha": 4,
+      "colunas_linha": 2,
+      //"padding": 0,
+      //"borda":          
       "quadros": [
 
         {
 
           "intervalo": 5000,
-          "delay": 5000,
+          "delay": 0,
           "fotos": [
             "Ang Olho Esquerdo.jpg",
             "Brad Olho Esquerdo.jpg",
@@ -29,7 +31,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 4000,
+          "delay": 0,
           "fotos": [
             "Ang Boca Esquerda.jpg",
             "Brad Boca Esquerda.jpg",
@@ -39,46 +41,7 @@
         },
         {
           "intervalo": 5000,
-          "delay": 3000,
-          "fotos": [
-            "Ang Boca Direita.jpg",
-            "Brad Boca Direita.jpg",
-            "Aérea-inferior Direita.jpg"
-          ]
-        },
-        {
-
-          "intervalo": 5000,
-          "delay": 2000,
-          "fotos": [
-            "Ang Olho Esquerdo.jpg",
-            "Brad Olho Esquerdo.jpg",
-            "Aérea-superior Esquerda.jpg"
-
-          ]
-        },
-        {
-          "intervalo": 5000,
-          "delay": 1500,
-          "fotos": [
-            "Ang Olho Direito.jpg",
-            "Brad Olho Direito.jpg",
-            "Aérea-superior Direita.jpg"
-          ]
-        },
-        {
-          "intervalo": 5000,
-          "delay": 1000,
-          "fotos": [
-            "Ang Boca Esquerda.jpg",
-            "Brad Boca Esquerda.jpg",
-            "Aérea-inferior Esquerda.jpg"
-
-          ]
-        },
-        {
-          "intervalo": 5000,
-          "delay": 1000,
+          "delay": 0,
           "fotos": [
             "Ang Boca Direita.jpg",
             "Brad Boca Direita.jpg",
